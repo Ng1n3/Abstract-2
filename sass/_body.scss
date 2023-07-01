@@ -1,0 +1,210 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+.section1 {
+	height: 39rem;
+	background-color: v.$color-p-light-blue;
+
+
+
+	&--container {
+		height: 100%;
+		max-width: 72rem;
+		display: flex;
+		gap: 1.5rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+
+
+
+		h1 {
+			font-size: v.$font-max-1;
+			font-weight: v.$font-wt-md;
+
+            @media only screen and (max-width: v.$bp-large) {
+                    font-size: 6.5rem;
+            }
+		}
+
+		input {
+			width: 100%;
+			padding: 2rem 1.5rem;
+			font-size: v.$font-sm-2;
+			border-radius: 0.5rem;
+			border: 1px solid v.$color-black;
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+				rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            
+            @media only screen and (max-width: v.$bp-small) {
+                width: 80%;
+                }
+
+			&:hover,
+			&:focus,
+			&:active {
+				border: 1.2px solid v.$color-p-blue;
+			}
+		}
+	}
+
+	&:hover {
+		border-bottom: 1px solid v.$color-black; /*Use js to change this later*/
+	}
+
+    &:active, &:focus {
+        border-bottom: none;
+    }
+}
+
+.section2 {
+	padding: 9rem 0;
+
+	&--con {
+		display: grid;
+		grid-template-columns: repeat(2, 52rem);
+		grid-template-rows: auto auto;
+		justify-content: center;
+        row-gap: 4.8rem;
+
+        @media only screen and (max-width: v.$bp-small) {
+            grid-template-columns: repeat(1, 52rem);
+        }
+
+		&--container {
+			display: flex;
+			gap: 1.5rem;
+			// max-width: 30rem;
+
+			img {
+				width: 8.4rem;
+				height: 8.4rem;
+			}
+
+			h3 {
+				font-size: v.$font-md-1;
+				font-weight: v.$font-wt-lg;
+			}
+
+			p {
+				font-size: v.$font-md-1;
+				font-weight: v.$font-wt-md;
+			}
+
+            a {
+                
+                font-size: v.$font-sm-2;
+                color: v.$color-p-blue;
+                margin-top: 1rem;
+                transition: all ease-out .3s;
+
+                &:hover {
+                    border-bottom: 1px solid v.$color-p-blue;
+                }
+
+                .nested-option {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 200rem;
+                }
+            }
+
+		}
+	}
+}
+
+.footer {
+    background-color: v.$color-black;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5rem 0;
+
+    @media only screen and (max-width: v.$bp-small) {
+        display: grid;
+        grid-template-columns: (2, 25rem);
+        gap: 3rem;
+    }
+
+    &--container-left {
+        
+        &--list {
+            display: flex;
+            gap: 2.5rem;
+            justify-content: center;
+            color: v.$color-white;
+
+            @media only screen and (max-width: v.$bp-smaller) {
+                display: grid;
+                grid-template-columns: repeat(2, 20rem);
+                gap: 3rem;
+            }
+
+
+            &--container {
+                h3 {
+                    font-size: v.$font-md-1;
+                    font-weight: v.$font-wt-lg;
+                }
+
+                li:not(:nth-of-type(1)) {
+                    margin-top: .7rem;
+                }
+
+                li a {
+                    font-size: v.$font-sm-1;
+                    color: v.$color-white;
+                    cursor: default;
+                    transition: all ease-out .3s;
+
+                    &:hover {
+                        border-bottom: 1px solid v.$color-white;
+                    }
+                }
+
+                p {
+                    font-size: v.$font-sm-1;
+                }
+            }
+    }
+}
+
+&--right--section {
+    align-self:flex-end;
+    img {
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+    p {
+        color: v.$color-white;
+        font-size: v.$font-sm-2;
+    }
+}
+}
+
+.sticky {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+
+    // background-color: v.$color-black;
+    
+    button.stick {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: v.$color-white;
+        background-color: v.$color-p-blue;
+        padding: 1rem 2rem;
+        border-radius: 5rem;
+
+        img  {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+}
+
+
+

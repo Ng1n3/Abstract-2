@@ -1,0 +1,22 @@
+{
+  "name": "abstract",
+  "version": "1.0.0",
+  "description": "single webpage from frontendpractise level 1 project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ng1n3/Abstract.git"
+  },
+  "author": "NG1N3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ng1n3/Abstract/issues"
+  },
+  "homepage": "https://github.com/Ng1n3/Abstract#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

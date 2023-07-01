@@ -1,0 +1,45 @@
+
+
+/* ==== Color ====== */
+
+$color-p-blue: #4c5fd5;
+$color-p-light-blue: #dadbf1;
+$color-black: #000;
+$color-white: #fff;
+
+/* ==== font ==== */
+
+$font-family-select: "Work Sans", sans-serif;
+$font-sm-1: 1.6rem;
+// $font-sm-1-new: 12px;
+$font-sm-2: 2rem;
+// $font-sm-2-new: 15px;
+$font-md-1: 2.4rem;
+// $font-md-1-new: 19px;
+$font-max-1: 8rem;
+// $font-max-1-new: 60px;
+
+/* ==== font weight ==== */
+$font-wt-sm: 300;
+$font-wt-md: 400;
+$font-wt-lg: 500;
+
+/* ==== media queries ===== */
+
+$bp-largests: 73.76em;
+$bp-largest: 73.75em;// 1180px. 1em = 16px;
+$bp-large: 65.25em; // 1050px;
+$bp-medium: 53.125em; // 850px;
+$bp-small: 41.875em; // 670px;
+$bp-smaller: 31.25em; // 500px;
+
+/* ==== hamburger props ===== */
+
+$bar-width: 2rem;
+$bar-height: .2rem;
+$bar-gap: .5rem;
+$bar-foreground: #fff;
+$bar-background: #000;
+$animation-timing: 200ms ease-in-out;
+// $hamburger-height: calc($bar-height * 3 + $bar-gap * 2); 
+

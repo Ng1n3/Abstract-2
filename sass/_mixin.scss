@@ -1,0 +1,12 @@
+@use "variable" as v;
+
+@mixin button {
+	border-radius: 1rem;
+	font-size: v.$font-md-1;
+	color: v.$color-white;
+}
+
+@mixin hidden {
+        display: none;
+}
+
